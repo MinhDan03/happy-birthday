@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <title>Happy Birthday</title>
+    <link rel="icon" type="image/x-icon" href="./images//favicon-1.jpg">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <audio class="song">
+        <source src="./music/happy-birthday.mp3">
+        </source>
+    </audio>
+    <canvas id=c></canvas>
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong>Dear Person.</strong>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Numquam labore omnis minus maiores laboriosam, facere in beatae esse. 
-                        </p>
+                        <strong>Hi bạn Kiều🔖,</strong>
+                        <div style="margin-top: 5px;">
+                            Chúc mừng sinh nhật. Chúc bạn luôn được yêu thương từ gia đình và bạn bè.   
+                            Sinh nhật vui vẻ, hạnh phúc và tràn đầy niềm vui nhé. 🥳🎈
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="heart"></div>
         </div>
     </div>
+      <!-- Sweetalert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="application/javascript" src="./script/main.js"></script>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
