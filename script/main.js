@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Vợ kiều thích nghe nhạc không?',
+        title: 'Vợ kiều có thích nghe nhạc không hihi?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
