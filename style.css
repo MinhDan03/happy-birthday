@@ -1,8 +1,8 @@
 :root{
-  --primary: #e9f0ee;
+  --primary: #e1ecd5; //e9f0ee
   --bg-color: rgb(5, 53, 61);
-  --bg-envelope-color: #e1ecd5;
-  --envelope-tab: #e1ecd5;
+  --bg-envelope-color: #e9f0ee;
+  --envelope-tab: #e9f0ee;
   --envelope-cover: #b2c9a5;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --txt-color: #444;
@@ -19,6 +19,19 @@ body{
   overflow: hidden;
   position: relative;
 }
+.custom-font {
+  font-family: "Arial", sans-serif; /* Thay thế "Arial" bằng font bạn muốn sử dụng */
+}
+.swal2-title {
+  font-size: 20px !important; /* Đổi kích thước font chữ */
+  font-family: 'Arial', sans-serif; /* Đổi font chữ */
+  color: black !important;
+  font-weight: 600 !important;
+}
+/* .swal2-popup .swal2-title{
+  font-size: 24px;
+  color: black;
+} */
 canvas {
 	position: absolute;
 	top: -250px;
@@ -88,7 +101,7 @@ p > a:first-of-type {
   bottom: 0;
   width: 54%;
   height: 80%;
-  background: var(--primary);
+  background: #fff;
   text-align: center;
   transition: all 1s ease-in-out;
   box-shadow: 0 0 5px var(--shadow-color);
@@ -100,6 +113,15 @@ p > a:first-of-type {
   color: var(--txt-color);
   text-align: left;
   font-size: 10px;
+}
+.letter-container{
+  position: relative;
+}
+.image-happy{
+  position: absolute;
+  width: 35%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .heart {
   position: absolute;
@@ -150,6 +172,18 @@ p > a:first-of-type {
     top: -200px;
   }
   .envelope > .letter > .text{
-    font-size: 9px;
+    font-size: 10px;
+  }
+  .swal2-title {
+    font-size: 16px !important; /* Đổi kích thước font chữ */
+    font-family: 'Arial', sans-serif; /* Đổi font chữ */
+    color: black !important;
+    font-weight: 600 !important;
+  }
+  .image-happy{
+    position: absolute;
+    width: 32%;
+    left: 50%;
+    transform: translate(-50%);
   }
 }

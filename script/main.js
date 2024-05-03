@@ -1,6 +1,7 @@
+
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Vợ kiều có thích nghe nhạc không hihi?',
+        title: 'Chúc Mừng Sinh Nhật Dưa. Đ Tặng Dưa Một Bài Hát Và Những Lời Chúc Tốt Đẹp Đến Dưa. Mong Dưa Nhận Nhé?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -21,7 +22,7 @@ var w = c.width = window.innerWidth,
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'HAPPY', 'BIRTHDAY','KIỀU!' ],
+			strings: [ 'HAPPY', 'BIRTHDAY','DƯA!' ],
 			charSize: 30,
 			charSpacing: 35,
 			lineHeight: 40,
@@ -375,7 +376,7 @@ function anim(){
 	
 	window.requestAnimationFrame( anim );
 	
-	ctx.fillStyle = '#e9f0ee';
+	ctx.fillStyle = '#e1ecd5';
 	ctx.fillRect( 0, 0, w, h );
 	
 	ctx.translate( hw, hh );
